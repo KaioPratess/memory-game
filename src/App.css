@@ -1,0 +1,45 @@
+@import '../src/styles/scoreboard.css';
+
+@font-face {
+  font-family: 'Marvel';
+  src: url('./assets/Marvel-Regular.ttf');
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.app {
+  display: grid;
+  grid-template-rows: 125px calc(100vh - 165px) 40px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: red;
+  padding: 20px;
+}
+
+.header h1 {
+  color: white;
+  font-size: 6rem;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-family: 'Marvel', sans-serif;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  align-items: center;
+  color: white;
+  font-family: sans-serif;
+  background-color: red;
+}
