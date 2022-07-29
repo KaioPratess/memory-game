@@ -1,4 +1,6 @@
 @import '../src/styles/scoreboard.css';
+@import '../src/styles/board.css';
+
 
 @font-face {
   font-family: 'Marvel';
@@ -14,7 +16,7 @@
 
 .app {
   display: grid;
-  grid-template-rows: 125px calc(100vh - 165px) 40px;
+  grid-template-rows: 125px auto 40px;
 }
 
 .header {
@@ -32,6 +34,22 @@
   text-transform: uppercase;
   letter-spacing: 5px;
   font-family: 'Marvel', sans-serif;
+  user-select: none;
+}
+
+@media (max-width: 611px) {
+  .header h1 {
+    color: white;
+    font-size: 4rem;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-family: 'Marvel', sans-serif;
+    user-select: none;
+  }
+}
+
+.main {
+  background: url('https://cdn.wallpapersafari.com/9/69/uy4YTE.jpg') no-repeat center/cover;
 }
 
 .footer {
