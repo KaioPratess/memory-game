@@ -17,8 +17,14 @@ function App() {
   }
 
   function changeBestScore(score) {
-    setBestScore(score)
-    localStorage.setItem('bestScore', JSON.stringify(score))
+    const currentScore = localStorage.getItem('bestScore');
+    if(currentScore < score) {
+      setBestScore(score)
+      localStorage.setItem('bestScore', JSON.stringify(score))
+    } else {
+      setBestScore(score)
+      setBestScore(currentScore)
+    }
   }
 
   return (
