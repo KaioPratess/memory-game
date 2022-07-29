@@ -1,4 +1,4 @@
-<h1><a>Memory Game</a></h1>
+<h1><a href='https://kaiopratess.github.io/memory-game/'>Memory Game</a></h1>
 
 <h2>What is this project about?</h2>
 <p>This project is a simple memory game created using the Marvel API. Don't click at the same character twice!
